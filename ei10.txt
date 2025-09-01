@@ -1,0 +1,100 @@
+--- DATA DESCRIPTION --- 
+
+The `table_emerald_isle` contains real estate listing data with 105 entries.
+
+Columns and their summary:
+- `Listing_Price` (integer): The price of the property.
+    Range: $57,000.0 to $7,250,000.0, Average: $1,377,895.24.
+- `Address` (string): The street address of the property.
+- `Bedrooms` (integer): The number of bedrooms.
+    Range: 0 to 11, Average: 3.60.
+- `Bathrooms` (integer): The number of bathrooms.
+    Range: 0 to 11, Average: 3.67.
+- `Waterfront_Status` (string): Indicates the property's proximity to water.
+    Categories: Non-Waterfront (46 listings), Oceanfront (27 listings), Water_View (12 listings), Water_Access_Community (12 listings), Soundfront (7 listings), Pond_Front (1 listings).
+- `Days_on_Market_Est` (integer): Estimated number of days the property has been on the market.
+    Range: 0 to 60, Average: 24.75 days.
+==================================================
+--- GENERATED QUESTIONS (as YOU ARE LOOKING FOR AFFORDABLE HOUSING FOR YOU AND YOUR SPOUSE) ---
+1: What are the listing prices, bedrooms, and bathrooms for the 10 most affordable properties? 
+2: What is the average listing price for properties with 1 or 2 bedrooms and 1 or 2 bathrooms? 
+3: How does the Waterfront_Status impact listing prices for properties below the overall average price? 
+4: Are there properties that have been on the market for a longer duration but are priced significantly below average, indicating potential negotiation opportunities? 
+5: What is the price range and typical number of bedrooms and bathrooms for properties in the bottom quartile by Listing_Price? 
+6: What is the distribution of Waterfront_Status for properties priced under $250,000? 
+
+==================================================
+--- PANDASAI ANSWERS ---
+Q: What are the listing prices, bedrooms, and bathrooms for the 10 most affordable properties?
+A: 
+    Listing_Price  Bedrooms  Bathrooms
+0          57000         3          2
+1         114000         3          2
+2         285000         0          0
+3         295000         0          0
+4         299900         1          1
+5         305000         0          0
+6         315000         1          1
+7         325000         1          1
+8         334900         1          1
+9         335000         0          0 
+
+Q: What is the average listing price for properties with 1 or 2 bedrooms and 1 or 2 bathrooms?
+A: 
+ 499709.0909090909 
+
+Q: How does the Waterfront_Status impact listing prices for properties below the overall average price?
+A: 
+         Waterfront_Status  Average_Listing_Price_Below_Overall_Avg
+0              Soundfront                             1.275000e+06
+1          Non-Waterfront                             8.056925e+05
+2              Oceanfront                             7.251000e+05
+3  Water_Access_Community                             6.531333e+05
+4              Water_View                             4.925800e+05
+5              Pond_Front                             2.850000e+05 
+
+Q: Are there properties that have been on the market for a longer duration but are priced significantly below average, indicating potential negotiation opportunities?
+A: 
+                           Address  Listing_Price  Days_on_Market_Est       Waterfront_Status
+0                131 Purdie Drive         795000                  58          Non-Waterfront
+1           9100 Reed Drive #3107         325000                  57              Water_View
+2                 124 Ethel Drive         728000                  56          Non-Waterfront
+3            2506 Emerald Drive E         949000                  55              Oceanfront
+4                  408 Lee Avenue         569500                  54          Non-Waterfront
+5              4705 Ocean Drive W        1091000                  52              Oceanfront
+6            542 Sea Lavender Trl         442000                  51          Non-Waterfront
+7             3307 Ocean Drive #2         575000                  50              Oceanfront
+8           9100 Reed Drive #1108         499000                  49              Water_View
+9    10300 Coast Guard Road #C103         549900                  49  Water_Access_Community
+10   9201 Coast Guard Road #E-101         515000                  47  Water_Access_Community
+11         9100 Reed Dr Unit 3204         459000                  46              Water_View
+12             110 Wyndward Court        1100000                  45          Non-Waterfront
+13                1914 Ocean Dr E         750000                  44              Oceanfront
+14  9201 Coast Guard Rd Unit H206         299900                  43  Water_Access_Community
+15             7021 Ocean Drive E        1275000                  43              Oceanfront
+16          7327 Archers Creek Dr         700000                  42          Non-Waterfront
+17            402 W Landing Drive        1275000                  41              Soundfront
+18                 402 Lee Avenue         625000                  40          Non-Waterfront
+19                    139 Fawn Dr         675000                  39          Non-Waterfront
+20       129 Heverly Dr Unit East        1299000                  35          Non-Waterfront
+21                 5901 Mclean St         880000                  34          Non-Waterfront
+22               9707 Poseidon Rd        1350000                  32  Water_Access_Community
+23             9100 Reed Dr #3202         334900                  31              Water_View
+24  9201 Coast Guard Rd Unit C101         605000                  31  Water_Access_Community
+25                 109 Lobster Ln         900000                  30          Non-Waterfront
+26          7227 Archers Creek Dr         899000                  29          Non-Waterfront
+27               120 Shorerush Dr        1200000                  28          Non-Waterfront
+28         403 Emerald Landing Dr         952000                  27          Non-Waterfront
+29             5418 Cedar Tree Ln         749900                  25          Non-Waterfront 
+
+Q: What is the price range and typical number of bedrooms and bathrooms for properties in the bottom quartile by Listing_Price?
+A: 
+ For properties in the bottom quartile by Listing_Price (up to $615,000):
+Price Range: $57,000 to $615,000
+Typical Number of Bedrooms: 1.7
+Typical Number of Bathrooms: 1.6 
+
+Q: What is the distribution of Waterfront_Status for properties priced under $250,000?
+A: 
+   Waterfront_Status  Number_of_Properties
+0        Oceanfront                     2 

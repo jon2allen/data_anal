@@ -1,0 +1,76 @@
+--- DATA DESCRIPTION --- 
+
+The table 'table_emerald_isle' contains real estate listing data with 105 entries and 6 columns:
+- **Listing_Price** (integer): Price of the property. Ranges from $57,000.0 to $7,250,000.0, with an average of $1,377,895.24.
+- **Address** (string): Unique address of the property. There are 104 distinct addresses, likely one per listing.
+- **Bedrooms** (integer): Number of bedrooms. Ranges from 0.0 to 11.0, with an average of 3.60.
+- **Bathrooms** (integer): Number of bathrooms. Ranges from 0.0 to 11.0, with an average of 3.67.
+- **Waterfront_Status** (string): Indicates proximity to water. There are 6 distinct statuses, e.g., 'Oceanfront, Non-Waterfront, Water_View...'.
+- **Days_on_Market_Est** (integer): Estimated days the property has been on the market. Ranges from 0.0 to 60.0, with an average of 24.75.
+==================================================
+--- GENERATED QUESTIONS (as YOU ARE LOOKING TO SELL A 4 BEDROOM HOUSE AND WANT TO SET GOOD PRICE) ---
+1: What is the average listing price for 4-bedroom houses in the dataset, and what is the range of prices for such properties? 
+2: How does the average listing price for 4-bedroom houses change based on their 'Waterfront_Status' (e.g., Oceanfront vs. Non-Waterfront)? 
+3: For 4-bedroom houses, how does the number of bathrooms correlate with the listing price? 
+4: What is the typical 'Days_on_Market_Est' for 4-bedroom properties, particularly distinguishing between lower-priced and higher-priced listings? 
+5: Are there any 4-bedroom houses with exceptionally high or low 'Listing_Price' relative to their 'Bathrooms' and 'Waterfront_Status', and what might explain these deviations? 
+6: What are the most common combinations of 'Bathrooms' and 'Waterfront_Status' for 4-bedroom homes, and what are the average prices for these combinations? 
+
+==================================================
+--- PANDASAI ANSWERS ---
+Q: What is the average listing price for 4-bedroom houses in the dataset, and what is the range of prices for such properties?
+A: 
+ The average listing price for 4-bedroom houses is $1,571,581.82. The price range for such properties is from $625,000.00 to $3,399,000.00. 
+
+Q: How does the average listing price for 4-bedroom houses change based on their 'Waterfront_Status' (e.g., Oceanfront vs. Non-Waterfront)?
+A: 
+         Waterfront_Status  Average_Listing_Price
+0              Oceanfront           1.953667e+06
+1          Non-Waterfront           1.289091e+06
+2              Soundfront           2.106000e+06
+3  Water_Access_Community           1.736633e+06
+4              Water_View           8.999000e+05 
+
+Q: For 4-bedroom houses, how does the number of bathrooms correlate with the listing price?
+A: 
+ For 4-bedroom houses, there is a weak or no significant correlation (0.19) between the number of bathrooms and the listing price. 
+
+Q: What is the typical 'Days_on_Market_Est' for 4-bedroom properties, particularly distinguishing between lower-priced and higher-priced listings?
+A: 
+                        Price_Category  Typical_Days_on_Market_Est
+0  Higher-Priced (at or above median)                   21.181818
+1         Lower-Priced (below median)                   23.272727 
+
+Q: Are there any 4-bedroom houses with exceptionally high or low 'Listing_Price' relative to their 'Bathrooms' and 'Waterfront_Status', and what might explain these deviations?
+A: 
+ Here are some 4-bedroom houses with exceptionally HIGH 'Listing_Price' relative to their 'Bathrooms' and 'Waterfront_Status':
+  - Address: 1113 Ocean Drive, Actual Price: $2,490,000, Bathrooms: 3, Waterfront Status: Oceanfront. Average for similar properties: $1,953,667. Deviation: $536,333. Days on Market: 42 days. 
+    Possible explanation: A lower 'Days_on_Market_Est' might indicate high demand or unique desirable features not captured, while a higher 'Days_on_Market_Est' for a high price could suggest it's currently overpriced or awaiting the right buyer for a premium offering.  - Address: 10530 Coast Guard Road, Actual Price: $2,360,000, Bathrooms: 4, Waterfront Status: Water_Access_Community. Average for similar properties: $1,929,950. Deviation: $430,050. Days on Market: 14 days. 
+    Possible explanation: A lower 'Days_on_Market_Est' might indicate high demand or unique desirable features not captured, while a higher 'Days_on_Market_Est' for a high price could suggest it's currently overpriced or awaiting the right buyer for a premium offering.  - Address: 3804 Emerald Dr E, Actual Price: $1,590,000, Bathrooms: 4, Waterfront Status: Non-Waterfront. Average for similar properties: $1,219,600. Deviation: $370,400. Days on Market: 1 days. 
+    Possible explanation: A lower 'Days_on_Market_Est' might indicate high demand or unique desirable features not captured, while a higher 'Days_on_Market_Est' for a high price could suggest it's currently overpriced or awaiting the right buyer for a premium offering.  - Address: 3905 Ocean Drive, Actual Price: $2,280,000, Bathrooms: 3, Waterfront Status: Oceanfront. Average for similar properties: $1,953,667. Deviation: $326,333. Days on Market: 33 days. 
+    Possible explanation: A lower 'Days_on_Market_Est' might indicate high demand or unique desirable features not captured, while a higher 'Days_on_Market_Est' for a high price could suggest it's currently overpriced or awaiting the right buyer for a premium offering.  - Address: 1707 Emerald Drive, Actual Price: $1,970,000, Bathrooms: 5, Waterfront Status: Non-Waterfront. Average for similar properties: $1,664,500. Deviation: $305,500. Days on Market: 24 days. 
+    Possible explanation: A lower 'Days_on_Market_Est' might indicate high demand or unique desirable features not captured, while a higher 'Days_on_Market_Est' for a high price could suggest it's currently overpriced or awaiting the right buyer for a premium offering.
+Here are some 4-bedroom houses with exceptionally LOW 'Listing_Price' relative to their 'Bathrooms' and 'Waterfront_Status':
+  - Address: 4705 Ocean Drive W, Actual Price: $1,091,000, Bathrooms: 3, Waterfront Status: Oceanfront. Average for similar properties: $1,953,667. Deviation: $-862,667. Days on Market: 52 days. 
+    Possible explanation: A lower 'Days_on_Market_Est' for a low price might indicate a quick sale or a bargain opportunity. A higher 'Days_on_Market_Est' for a low price could suggest issues with the property (e.g., condition, location) or a strong motivation to sell quickly.  - Address: 101 Sea Dunes Dr, Actual Price: $1,499,900, Bathrooms: 4, Waterfront Status: Water_Access_Community. Average for similar properties: $1,929,950. Deviation: $-430,050. Days on Market: 1 days. 
+    Possible explanation: A lower 'Days_on_Market_Est' for a low price might indicate a quick sale or a bargain opportunity. A higher 'Days_on_Market_Est' for a low price could suggest issues with the property (e.g., condition, location) or a strong motivation to sell quickly.  - Address: 5901 Mclean St, Actual Price: $880,000, Bathrooms: 4, Waterfront Status: Non-Waterfront. Average for similar properties: $1,219,600. Deviation: $-339,600. Days on Market: 34 days. 
+    Possible explanation: A lower 'Days_on_Market_Est' for a low price might indicate a quick sale or a bargain opportunity. A higher 'Days_on_Market_Est' for a low price could suggest issues with the property (e.g., condition, location) or a strong motivation to sell quickly.  - Address: 307 Cape Fear Loop, Actual Price: $1,359,000, Bathrooms: 5, Waterfront Status: Non-Waterfront. Average for similar properties: $1,664,500. Deviation: $-305,500. Days on Market: 23 days. 
+    Possible explanation: A lower 'Days_on_Market_Est' for a low price might indicate a quick sale or a bargain opportunity. A higher 'Days_on_Market_Est' for a low price could suggest issues with the property (e.g., condition, location) or a strong motivation to sell quickly.  - Address: 120 Santa Maria Dr, Actual Price: $1,079,000, Bathrooms: 4, Waterfront Status: Non-Waterfront. Average for similar properties: $1,219,600. Deviation: $-140,600. Days on Market: 12 days. 
+    Possible explanation: A lower 'Days_on_Market_Est' for a low price might indicate a quick sale or a bargain opportunity. A higher 'Days_on_Market_Est' for a low price could suggest issues with the property (e.g., condition, location) or a strong motivation to sell quickly. 
+
+Q: What are the most common combinations of 'Bathrooms' and 'Waterfront_Status' for 4-bedroom homes, and what are the average prices for these combinations?
+A: 
+     Bathrooms       Waterfront_Status  Number_of_Homes  Average_Price
+0           4          Non-Waterfront                5   1.219600e+06
+1           3              Oceanfront                3   1.953667e+06
+2           4  Water_Access_Community                2   1.929950e+06
+3           5          Non-Waterfront                2   1.664500e+06
+4           3          Non-Waterfront                2   8.890000e+05
+5           4              Soundfront                1   3.399000e+06
+6           6          Non-Waterfront                1   2.350000e+06
+7           2              Soundfront                1   2.100000e+06
+8           6              Soundfront                1   1.650000e+06
+9           5  Water_Access_Community                1   1.350000e+06
+10          5              Soundfront                1   1.275000e+06
+11          3              Water_View                1   8.999000e+05
+12          2          Non-Waterfront                1   6.250000e+05 

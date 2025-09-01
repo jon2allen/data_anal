@@ -1,0 +1,49 @@
+--- DATA DESCRIPTION --- 
+
+The dataset contains 105.0 rows and 6 columns from the 'table_emerald_isle' table.
+
+**Column Descriptions:**
+- **Listing_Price** (integer): The price of the listing. Range: $57,000 to $7,250,000. Average: $1,377,895.
+- **Address** (string): The street address of the property. This typically serves as a unique identifier for each listing.
+- **Bedrooms** (integer): Number of bedrooms in the property. Range: 0 to 11. Average: 3.6.
+- **Bathrooms** (integer): Number of bathrooms in the property. Range: 0 to 11. Average: 3.7.
+- **Waterfront_Status** (string): Indicates the property's proximity to water (e.g., Oceanfront, Water_View).
+  6 distinct statuses found. Most common: 'Non-Waterfront' (46 listings), 'Oceanfront' (27 listings), 'Water_View' (12 listings).
+- **Days_on_Market_Est** (integer): Estimated number of days the property has been on the market. Range: 0 to 60 days. Average: 24.8 days.
+==================================================
+--- GENERATED QUESTIONS (as YOU ARE AN INVESTOR WITH 500K - WHAT ARE THE POSSIBLITIES HERE) ---
+1: What is the typical bedroom and bathroom count for properties listed at or below $500,000, and what percentage of these lack any waterfront status? 
+2: What is the lowest price for an 'Oceanfront' or 'Water_View' property, and are any such listings available within the $500,000 budget? 
+3: How many properties priced under $500,000 have been on the market for more than 45 days, potentially indicating opportunities for negotiation? 
+4: Among properties listed around $500,000, what is the best combination of bedrooms, bathrooms, and waterfront status that can be found? 
+5: What is the average 'Days_on_Market_Est' for properties listed between $250,000 and $500,000, and does this suggest a fast or slow moving market segment for my budget? 
+6: Are there any properties priced slightly above $500,000 that offer significantly better features (bedrooms, bathrooms, or waterfront status) compared to the most expensive properties just under $500,000, indicating a potential "value wall"? 
+
+==================================================
+--- PANDASAI ANSWERS ---
+Q: What is the typical bedroom and bathroom count for properties listed at or below $500,000, and what percentage of these lack any waterfront status?
+A: 
+ For properties listed at or below $500,000:
+- The typical bedroom count is 1.
+- The typical bathroom count is 1.
+- 0.00% of these properties lack any waterfront status (i.e., Waterfront_Status is NULL or empty). 
+
+Q: What is the lowest price for an 'Oceanfront' or 'Water_View' property, and are any such listings available within the $500,000 budget?
+A: 
+ The lowest price for an 'Oceanfront' or 'Water_View' property is $57,000.00. Are any such listings available within the $500,000 budget? Yes. 
+
+Q: How many properties priced under $500,000 have been on the market for more than 45 days, potentially indicating opportunities for negotiation?
+A: 
+ 4 
+
+Q: Among properties listed around $500,000, what is the best combination of bedrooms, bathrooms, and waterfront status that can be found?
+A: 
+ Among properties listed around $500,000, the best combination found is 3 bedrooms, 2 bathrooms, and a 'Water_Access_Community' waterfront status. 
+
+Q: What is the average 'Days_on_Market_Est' for properties listed between $250,000 and $500,000, and does this suggest a fast or slow moving market segment for my budget?
+A: 
+ The average 'Days_on_Market_Est' for properties listed between $250,000 and $500,000 is approximately 22.67 days. This suggests a relatively fast-moving market segment for your budget, as properties are on the market for an average of 22.67 days. 
+
+Q: Are there any properties priced slightly above $500,000 that offer significantly better features (bedrooms, bathrooms, or waterfront status) compared to the most expensive properties just under $500,000, indicating a potential "value wall"?
+A: 
+ Could not find enough property data in one or both of the specified price ranges ($490000-499999 and $500000-510000) to perform a meaningful 'value wall' comparison. Consider broadening the price ranges if possible. 
