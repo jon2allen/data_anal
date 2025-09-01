@@ -1,0 +1,69 @@
+--- DATA DESCRIPTION --- 
+
+The 'table_cayuga' dataset contains 131 rows and 10 columns.
+
+Columns and their types:
+- Address (string)
+- City (string)
+- State (string)
+- Zip (float)
+- Price (float)
+- Bedrooms (float)
+- Bathrooms (float)
+- Waterfront_Status (string)
+- Property_Type (string)
+- Listing_Status (string)
+
+Summary of key numerical columns:
+- Price: Ranges from $20,000.00 to $3,999,000.00 with an average of $715,811.65.
+- Bedrooms: Ranges from 0 to 8 with an average of 3.53.
+- Bathrooms: Ranges from 1 to 8 with an average of 2.54.
+
+Summary of key categorical columns:
+- Property_Type: Multi-Family, Land, Single-Family, Commercial
+- Waterfront_Status: Non-Waterfront, Waterfront
+- Listing_Status: Pending, Active Under Contract, Active
+
+==================================================
+--- GENERATED QUESTIONS (as YOU ARE LOOKING TO BUY A 2 BEDROOM AND 2 BATH HOUSE) ---
+1: How many active single-family homes have exactly 2 bedrooms and 2 bathrooms? 
+2: What is the average, minimum, and maximum price for active single-family homes with 2 bedrooms and 2 bathrooms? 
+3: How does the price of 2 bedroom, 2 bathroom single-family homes vary based on their Waterfront_Status? 
+4: Which cities or zip codes have the most active 2 bedroom, 2 bathroom single-family homes, and what are their respective average prices? 
+5: What percentage of all listed single-family homes in the dataset match the 2 bedroom, 2 bathroom criteria? 
+6: Among the 2 bedroom, 2 bathroom single-family homes, what is the distribution across 'Active', 'Pending', and 'Active Under Contract' listing statuses? 
+
+==================================================
+--- PANDASAI ANSWERS ---
+Q: How many active single-family homes have exactly 2 bedrooms and 2 bathrooms?
+A: 
+ 4 
+
+Q: What is the average, minimum, and maximum price for active single-family homes with 2 bedrooms and 2 bathrooms?
+A: 
+ For active single-family homes with 2 bedrooms and 2 bathrooms:
+Average Price: $599,700.00
+Minimum Price: $179,900.00
+Maximum Price: $1,100,000.00 
+
+Q: How does the price of 2 bedroom, 2 bathroom single-family homes vary based on their Waterfront_Status?
+A: 
+   Waterfront_Status  Number_Of_Homes  Min_Price  Max_Price  Average_Price
+0    Non-Waterfront                2   179900.0   219900.0       199900.0
+1        Waterfront                2   899000.0  1100000.0       999500.0 
+
+Q: Which cities or zip codes have the most active 2 bedroom, 2 bathroom single-family homes, and what are their respective average prices?
+A: 
+          City      Zip  Number_of_Homes  Average_Price
+0      Auburn  13021.0                2       559450.0
+1     Moravia  13118.0                1       179900.0
+2  Springport  13021.0                1      1100000.0 
+
+Q: What percentage of all listed single-family homes in the dataset match the 2 bedroom, 2 bathroom criteria?
+A: 
+ 3.48% of all listed single-family homes match the 2 bedroom, 2 bathroom criteria. 
+
+Q: Among the 2 bedroom, 2 bathroom single-family homes, what is the distribution across 'Active', 'Pending', and 'Active Under Contract' listing statuses?
+A: 
+   Listing_Status  Number_of_Homes
+0         Active                4 

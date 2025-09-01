@@ -1,0 +1,5 @@
+litellm==1.76.1
+pandas==2.3.2
+pandasai==2.3.2
+pandasai_litellm==0.0.1
+python-dotenv==1.1.1

@@ -1,0 +1,132 @@
+Address,City,State,Zip,Price,Bedrooms,Bathrooms,Waterfront_Status,Property_Type,Listing_Status
+520 Cayuga Heights Rd,Ithaca,NY,14850.0,1850000.0,6.0,6.0,Non-Waterfront,Single-Family,Active
+20 Renwick Heights Rd,Ithaca,NY,14850.0,649500.0,4.0,2.0,Non-Waterfront,Single-Family,Active
+2600 N Triphammer Rd,Ithaca,NY,14850.0,474000.0,4.0,2.0,Non-Waterfront,Single-Family,Active
+152 N Sunset Dr,Ithaca,NY,14850.0,625000.0,2.0,4.0,Non-Waterfront,Single-Family,Active
+92 Genung Cir,Ithaca,NY,14850.0,1750000.0,4.0,8.0,Non-Waterfront,Single-Family,Active
+5 Tyler Rd,Ithaca,NY,14850.0,685000.0,4.0,3.0,Non-Waterfront,Single-Family,Active
+51 Waterview Hts,Ithaca,NY,14850.0,1595000.0,5.0,6.0,Non-Waterfront,Single-Family,Active
+122 Autumn Ridge Cir,Ithaca,NY,14850.0,699000.0,3.0,2.0,Non-Waterfront,Single-Family,Active
+290 Algerine Rd,Lansing,NY,14882.0,1570000.0,4.0,3.0,Waterfront,Single-Family,Pending
+212 Wilson Rd,Lansing,NY,14882.0,450000.0,4.0,2.0,Non-Waterfront,Single-Family,Active
+5 Fiddlers Grn,Lansing,NY,14882.0,789000.0,4.0,4.0,Non-Waterfront,Single-Family,Active
+424 Lansingville Rd,Lansing,NY,14882.0,605000.0,3.0,3.0,Non-Waterfront,Single-Family,Active
+165 Reach Run,Lansing,NY,14882.0,1780000.0,4.0,5.0,Waterfront,Single-Family,Pending
+22 Ladoga Park Road W,Lansing,NY,14882.0,1455000.0,3.0,3.0,Waterfront,Single-Family,Active
+2429 Lower Lake Rd,Seneca Falls,NY,13148.0,699000.0,2.0,3.0,Waterfront,Single-Family,Active
+134 Cayuga St,Seneca Falls,NY,13148.0,235000.0,2.0,1.0,Non-Waterfront,Single-Family,Active
+2138 Route 89,Seneca Falls,NY,13148.0,795000.0,6.0,6.0,Waterfront,Single-Family,Active
+19 Seneca St,Seneca Falls,NY,13148.0,39000.0,4.0,1.0,Non-Waterfront,Single-Family,Active
+321 Fall St,Seneca Falls,NY,13148.0,214900.0,0.0,2.0,Non-Waterfront,Single-Family,Active
+1990 Rt 318,Seneca Falls,NY,13148.0,75000.0,4.0,2.0,Non-Waterfront,Single-Family,Active
+69 Cayuga St,Seneca Falls,NY,13148.0,499900.0,6.0,,Non-Waterfront,Single-Family,Active
+5203 State Route 38a,Auburn,NY,13021.0,399999.0,6.0,7.0,Non-Waterfront,Single-Family,Active
+5902 North Rd,Auburn,NY,13021.0,298000.0,3.0,2.0,Non-Waterfront,Single-Family,Active
+342 Fire Ln #16A,Auburn,NY,13021.0,349900.0,3.0,2.0,Waterfront,Single-Family,Active
+3276 Walker Rd,Auburn,NY,13021.0,325000.0,3.0,4.0,Non-Waterfront,Single-Family,Active
+12 Orchard Ave,Auburn,NY,13021.0,105000.0,3.0,1.0,Non-Waterfront,Single-Family,Active
+4454 Rockefeller Rd,Auburn,NY,13021.0,199900.0,4.0,1.0,Non-Waterfront,Single-Family,Active
+151 Burtis Point Rd,Auburn,NY,13021.0,899000.0,2.0,2.0,Waterfront,Single-Family,Active
+367 Waters Edge,Auburn,NY,13021.0,1199000.0,4.0,3.0,Waterfront,Single-Family,Active
+6382 E Lake Rd,Auburn,NY,13021.0,444995.0,3.0,3.0,Waterfront,Single-Family,Active
+5416 W Lake Rd,Auburn,NY,13021.0,675000.0,4.0,2.0,Waterfront,Single-Family,Active
+2950 Holland Dr,Auburn,NY,13021.0,495000.0,3.0,2.0,Waterfront,Single-Family,Active
+5388 W Lake Rd,Auburn,NY,13021.0,649000.0,4.0,2.0,Waterfront,Single-Family,Active
+5896 W Lake Rd,Auburn,NY,13021.0,724900.0,3.0,3.0,Waterfront,Single-Family,Active
+5199 W Lake Rd,Auburn,NY,13021.0,999900.0,3.0,2.0,Waterfront,Single-Family,Active
+5017 W Lake Rd,Auburn,NY,13021.0,800000.0,4.0,2.0,Waterfront,Single-Family,Active
+5567 W Lake Rd,Auburn,NY,13021.0,639000.0,3.0,3.0,Waterfront,Single-Family,Active
+4700 W Lake Rd,Auburn,NY,13021.0,1199900.0,6.0,3.0,Waterfront,Single-Family,Active
+62 Mary St,Auburn,NY,13021.0,292500.0,3.0,2.0,Non-Waterfront,Single-Family,Active
+288 Genesee St,Auburn,NY,13021.0,249900.0,6.0,2.0,Non-Waterfront,Multi-Family,Active
+111 Palmer St,Auburn,NY,13021.0,219900.0,2.0,2.0,Non-Waterfront,Single-Family,Active
+9 Cayuga St,Auburn,NY,13021.0,230000.0,6.0,2.0,Non-Waterfront,Multi-Family,Active
+17 North Park,Auburn,NY,13021.0,199000.0,3.0,2.0,Non-Waterfront,Single-Family,Active
+136 Osborne St,Auburn,NY,13021.0,169000.0,3.0,2.0,Non-Waterfront,Single-Family,Active
+1 Alden Ave,Auburn,NY,13021.0,349900.0,3.0,2.0,Non-Waterfront,Single-Family,Active
+5601 Buck Point Rd,Fleming,NY,13021.0,899000.0,5.0,5.0,Waterfront,Single-Family,Active
+4999 Ridge Rd,Union Springs,NY,13160.0,264900.0,3.0,1.0,Non-Waterfront,Single-Family,Active
+4338 State Route 90,Springport,NY,13160.0,979000.0,3.0,2.0,Waterfront,Single-Family,Active
+4319 State Route 90,Springport,NY,13160.0,319000.0,3.0,3.0,Waterfront,Single-Family,Active
+3 Blue Bird Ln,Springport,NY,13160.0,184900.0,3.0,2.0,Non-Waterfront,Single-Family,Active
+1228 Fitzpatrick Rd,Springport,NY,13021.0,1100000.0,2.0,2.0,Waterfront,Single-Family,Active
+2753 Centennial St,Weedsport,NY,13166.0,229900.0,4.0,2.0,Non-Waterfront,Single-Family,Active
+2540 Emerson Rd,Weedsport,NY,13166.0,245000.0,5.0,2.0,Non-Waterfront,Single-Family,Active
+8456 Jericho Rd,Weedsport,NY,13166.0,440000.0,3.0,3.0,Non-Waterfront,Single-Family,Active
+43 White Anchor Cv,Jordan,NY,13080.0,800000.0,4.0,2.0,Waterfront,Single-Family,Active
+129 Fire Ln #13,Jordan,NY,13080.0,369000.0,4.0,2.0,Waterfront,Single-Family,Active
+252 Fire Lane 13,Jordan,NY,13080.0,,3.0,1.0,Waterfront,Single-Family,Active
+98 Krystyna Ln Unit 6,Jordan,NY,13080.0,,3.0,,Non-Waterfront,Single-Family,Active
+1418 Sterling Station Rd,Sterling,NY,13156.0,299900.0,5.0,2.0,Non-Waterfront,Single-Family,Active
+447 State Route 104a,Sterling,NY,13156.0,425000.0,4.0,3.0,Non-Waterfront,Single-Family,Active
+14922 N Hadcock Dr,Sterling,NY,13156.0,629000.0,3.0,3.0,Waterfront,Single-Family,Active
+1270 Lake Como Rd,Cortland,NY,13045.0,259900.0,3.0,1.0,Waterfront,Single-Family,Active
+3423 State Route 34 Rd,Scipio Center,NY,13147.0,499900.0,4.0,2.0,Non-Waterfront,Single-Family,Active
+3387 State Route 34b,Scipio Center,NY,13147.0,299900.0,3.0,1.0,Non-Waterfront,Single-Family,Active
+179 Main St,Port Byron,NY,13140.0,126700.0,3.0,2.0,Non-Waterfront,Single-Family,Active
+1274 Haiti Rd,Port Byron,NY,13140.0,69900.0,1.0,1.0,Waterfront,Single-Family,Active
+735 Howell Rd,Port Byron,NY,13140.0,699000.0,3.0,3.0,Waterfront,Single-Family,Active
+7948 State Street Rd,Port Byron,NY,13140.0,269000.0,3.0,2.0,Non-Waterfront,Single-Family,Active
+253 Wheat St,Cayuga,NY,13034.0,259000.0,3.0,1.0,Non-Waterfront,Single-Family,Active
+6188 Lake St,Cayuga,NY,13034.0,649000.0,4.0,,Waterfront,Single-Family,Active
+6487 State Route 90 N,Cayuga,NY,13034.0,325000.0,2.0,1.0,Waterfront,Single-Family,Pending
+6166 Lake St,Cayuga,NY,13034.0,269000.0,4.0,3.0,Waterfront,Single-Family,Pending
+1059 State Route 326,Cayuga,NY,13034.0,219900.0,4.0,1.0,Non-Waterfront,Single-Family,Pending
+6251 Willard St,Cayuga,NY,13034.0,229900.0,2.0,1.0,Non-Waterfront,Single-Family,Pending
+6170 Lake St,Cayuga,NY,13034.0,749999.0,5.0,2.0,Waterfront,Single-Family,Pending
+6198 Lake St,Cayuga,NY,13034.0,749999.0,4.0,2.0,Waterfront,Single-Family,Pending
+232 N Main St,Moravia,NY,13118.0,179900.0,2.0,2.0,Non-Waterfront,Single-Family,Active
+4592 Riley Rd,Moravia,NY,13118.0,404900.0,3.0,2.0,Non-Waterfront,Single-Family,Active
+18 Fire Ln #4,Moravia,NY,13118.0,1397000.0,3.0,2.0,Waterfront,Single-Family,Active
+399 Fire Ln SUITE 34,Moravia,NY,13118.0,499000.0,2.0,1.0,Waterfront,Single-Family,Active
+483 Indian Cv,Moravia,NY,13118.0,825000.0,3.0,2.0,Waterfront,Single-Family,Active
+2846 Fire Ln #1,Moravia,NY,13118.0,699999.0,0.0,2.0,Waterfront,Single-Family,Active
+1988 State Route 38a,Moravia,NY,13118.0,262000.0,5.0,2.0,Non-Waterfront,Single-Family,Active
+784 Tollgate Hill Rd,Locke,NY,13092.0,274900.0,3.0,1.0,Non-Waterfront,Single-Family,Active
+1817 Honoco Rd,Aurora,NY,13026.0,759000.0,3.0,2.0,Waterfront,Single-Family,Active
+1653 Honoco Rd,Aurora,NY,13026.0,1599900.0,4.0,4.0,Waterfront,Single-Family,Active
+1353 Honoco Rd,Aurora,NY,13026.0,1150000.0,3.0,3.0,Waterfront,Single-Family,Active
+1183 Honoco Rd,Aurora,NY,13026.0,549000.0,2.0,1.0,Waterfront,Single-Family,Active
+1659 Honoco Rd,Aurora,NY,13026.0,944900.0,3.0,2.0,Waterfront,Single-Family,Active
+237 Main St,Aurora,NY,13026.0,675000.0,3.0,2.0,Waterfront,Single-Family,Active
+245 Main St,Aurora,NY,13026.0,625000.0,5.0,5.0,Waterfront,Multi-Family,Active
+120 Ridings Dr,Homer,NY,13077.0,930000.0,2.0,1.0,Waterfront,Single-Family,Active
+126 Ridings Dr,Homer,NY,13077.0,1200000.0,3.0,2.0,Waterfront,Single-Family,Active
+1077 - 1079 Taughannock Boulevard,Ithaca Town,NY,,2200000.0,8.0,7.0,Waterfront,Single-Family,Active Under Contract
+1121 Taughannock Boulevard,Ulysses,NY,,1799000.0,4.0,3.0,Waterfront,Single-Family,Active Under Contract
+5493 State Route 89,Varick,NY,,1699900.0,4.0,3.0,Waterfront,Single-Family,Active
+3092 Route 89,Fayette,NY,,1289000.0,4.0,3.0,Waterfront,Single-Family,Pending
+955 Fire Lane 6,Genoa,NY,,1178800.0,4.0,3.0,Waterfront,Single-Family,Active
+8123 Bainbridge Beach Road,Covert,NY,,997500.0,3.0,2.0,Waterfront,Single-Family,Active
+7059 Wyers Point Beach Road,Ovid,NY,,989000.0,6.0,3.0,Waterfront,Single-Family,Active
+7374 Wyers Point Road,Ovid,NY,14521.0,799900.0,4.0,2.0,Waterfront,Single-Family,Active
+641 Fire Lane 5,King Ferry,NY,13081.0,1300000.0,3.0,2.0,Waterfront,Single-Family,Active
+7658 County Road 153,Interlaken,NY,14847.0,1348000.0,5.0,3.0,Waterfront,Single-Family,Active
+1505 Gray Rd,Ledyard,NY,13160.0,399900.0,5.0,2.0,Non-Waterfront,Single-Family,Active
+1 Curtis St,Mentz,NY,13140.0,79500.0,2.0,1.0,Non-Waterfront,Single-Family,Active
+8089 State Route 90,Montezuma,NY,13117.0,99900.0,3.0,2.0,Non-Waterfront,Single-Family,Active
+6794 Fosterville Rd,Aurelius,NY,13021.0,599000.0,4.0,1.0,Non-Waterfront,Single-Family,Active
+269 E Lake Rd,Conquest,NY,13140.0,79000.0,1.0,1.0,Waterfront,Single-Family,Active
+245 Fire Lane 17,Cato,NY,13033.0,169900.0,1.0,1.0,Waterfront,Single-Family,Active
+4500 W Lake Rd,Skaneateles,NY,13152.0,3999000.0,5.0,6.0,Waterfront,Single-Family,Active
+1077 - 1079 Taughannock Boulevard,Ithaca,NY,,2200000.0,8.0,7.0,Waterfront,Single-Family,Active Under Contract
+4525 Rt-89,Varick,NY,,2195000.0,4.0,4.0,Waterfront,Single-Family,Pending
+9341 Kingtown Beach Road,Covert,NY,,1250000.0,3.0,2.0,Waterfront,Single-Family,Pending
+581 Lansing Station Road,Lansing,NY,,1200000.0,4.0,3.0,Waterfront,Single-Family,Pending
+1719 Honoco Road,Ledyard,NY,,995000.0,3.0,2.0,Waterfront,Single-Family,Pending
+2151 Pumphouse Road,,NY,,,3.0,3.0,Waterfront,Single-Family,Active
+6800 Rte 89,Ovid,NY,,1195000.0,,,Waterfront,Commercial,Active
+4489 State Route 89,,NY,,875000.0,3.0,3.0,Waterfront,Single-Family,Pending
+419 Cayuga Heights Road,Ithaca,NY,14850.0,798500.0,4.0,3.0,Non-Waterfront,Single-Family,Active
+0 Hillcrest Dr #2,Ithaca,NY,14850.0,540000.0,,,Non-Waterfront,Land,Active
+0 Blackchin Blvd #37,Ithaca,NY,14850.0,292000.0,,,Non-Waterfront,Land,Active
+0 Mecklenburg Rd,Ithaca,NY,14850.0,2250000.0,,,Non-Waterfront,Land,Active
+Cayuga Vista Dr,Lansing,NY,14882.0,350000.0,,,Non-Waterfront,Land,Active
+Court St,Cayuga,NY,13034.0,39000.0,,,Non-Waterfront,Land,Active
+3625 State Route 90 Lot 4 & 4a&b,Ledyard,NY,13026.0,1000000.0,,,Waterfront,Land,Active
+110 Main Street,Ledyard,NY,,999900.0,,,Waterfront,Land,Active
+27 & 29 Chestnut St #47,Seneca Falls,NY,13148.0,20000.0,,,Non-Waterfront,Land,Active
+5234 Oak Harbor Road,,NY,,325000.0,,,Waterfront,Land,Active
+5217 Oak Harbor Road,,NY,,290000.0,,,Waterfront,Land,Active
+4040 County Road 141 Road,,NY,,199000.0,,,Non-Waterfront,Land,Active
+152 Campbell Avenue,,NY,,99000.0,,,Non-Waterfront,Land,Active

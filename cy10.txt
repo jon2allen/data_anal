@@ -1,0 +1,72 @@
+--- DATA DESCRIPTION --- 
+
+The `table_cayuga` table contains 131 property listings with 10 columns providing details about each property.
+
+**Column Descriptions and Summaries:**
+
+*   **Address (string):** The physical address of the property. This column likely serves as a unique identifier for each listing.
+*   **City (string):** The city where the property is located. There are 34 unique cities. The most frequent cities are: Auburn (24 records), Ithaca (13 records), Cayuga (9 records).
+*   **State (string):** The state where the property is located. There are 1 unique states. The most frequent states are: NY (131 records).
+*   **Zip (float):** The postal code of the property. Values range from 13021 to 14882, with an average of 13412.
+*   **Price (float):** The listing price of the property. Prices range from $20,000 to $3,999,000, with an average price of $715,812.
+*   **Bedrooms (float):** The number of bedrooms in the property. Values range from 0 to 8, with an average of 3.5.
+*   **Bathrooms (float):** The number of bathrooms in the property. Values range from 1 to 8, with an average of 2.5.
+*   **Waterfront_Status (string):** Indicates whether the property is on the waterfront. The distribution of statuses is: Waterfront (71 records); Non-Waterfront (60 records).
+*   **Property_Type (string):** The type of property. The distribution of property types is: Single-Family (115 records); Land (12 records); Multi-Family (3 records); Commercial (1 records).
+*   **Listing_Status (string):** The current status of the property listing. The distribution of listing statuses is: Active (114 records); Pending (14 records); Active Under Contract (3 records).
+==================================================
+--- GENERATED QUESTIONS (as YOU ARE LOOKING FOR AFFORDABLE HOUSING FOR YOU AND YOUR SPOUSE) ---
+1: How many active single-family properties are listed below the average price of $715,812, and what is the distribution of their bedrooms and bathrooms? 
+2: Which cities, particularly Auburn or Ithaca, have the most active single-family homes with at least 2 bedrooms and 1 bathroom, and what are their respective median prices? 
+3: What is the price range for active non-waterfront single-family homes with 2 to 3 bedrooms and 1 to 2 bathrooms? 
+4: How many active single-family homes with at least 2 bedrooms and 1 bathroom are listed below an affordability threshold, such as $350,000? 
+5: What is the typical price difference between active waterfront and non-waterfront single-family homes with similar bedroom and bathroom counts? 
+6: Are there any active multi-family properties with at least 2 bedrooms and 1 bathroom, and if so, how do their prices compare to single-family homes? 
+
+==================================================
+--- PANDASAI ANSWERS ---
+Q: How many active single-family properties are listed below the average price of $715,812, and what is the distribution of their bedrooms and bathrooms?
+A: 
+ There are 62 active single-family properties listed below the average price of $715,812.
+
+Distribution of Bedrooms and Bathrooms:
+ Bedrooms  Bathrooms  Number_of_Properties
+      0.0        2.0                     2
+      1.0        1.0                     3
+      2.0        1.0                     4
+      2.0        2.0                     2
+      2.0        3.0                     1
+      2.0        4.0                     1
+      3.0        1.0                     6
+      3.0        2.0                    14
+      3.0        3.0                     7
+      3.0        4.0                     1
+      4.0        NaN                     1
+      4.0        1.0                     3
+      4.0        2.0                     9
+      4.0        3.0                     2
+      5.0        2.0                     4
+      6.0        NaN                     1
+      6.0        7.0                     1 
+
+Q: Which cities, particularly Auburn or Ithaca, have the most active single-family homes with at least 2 bedrooms and 1 bathroom, and what are their respective median prices?
+A: 
+      City  num_active_single_family_homes  median_price
+0  Auburn                              22      422497.0
+1  Ithaca                               9      699000.0 
+
+Q: What is the price range for active non-waterfront single-family homes with 2 to 3 bedrooms and 1 to 2 bathrooms?
+A: 
+ The price range for active non-waterfront single-family homes with 2-3 bedrooms and 1-2 bathrooms is from $79,500.00 to $699,000.00. 
+
+Q: How many active single-family homes with at least 2 bedrooms and 1 bathroom are listed below an affordability threshold, such as $350,000?
+A: 
+ 29 
+
+Q: What is the typical price difference between active waterfront and non-waterfront single-family homes with similar bedroom and bathroom counts?
+A: 
+ The typical price difference between active waterfront and non-waterfront single-family homes with similar bedroom and bathroom counts is approximately $530,800.66. 
+
+Q: Are there any active multi-family properties with at least 2 bedrooms and 1 bathroom, and if so, how do their prices compare to single-family homes?
+A: 
+ Yes, there are 3 active multi-family properties with at least 2 bedrooms and 1 bathroom. Their average price is $368,300.00. The average price of active single-family homes is $663,403.08. Multi-family properties are, on average, less expensive than single-family homes. 

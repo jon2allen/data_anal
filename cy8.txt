@@ -1,0 +1,63 @@
+--- DATA DESCRIPTION --- 
+
+The 'table_cayuga' table contains real estate listing information.
+It has 10 columns:
+- **Address**: (string) The street address of the property.
+- **City**: (string) The city where the property is located.
+- **State**: (string) The state where the property is located (e.g., NY).
+- **Zip**: (float) The postal code of the property.
+- **Price**: (float) The listing price of the property.
+- **Bedrooms**: (float) The number of bedrooms in the property.
+- **Bathrooms**: (float) The number of bathrooms in the property.
+- **Waterfront_Status**: (string) Indicates whether the property has a waterfront (e.g., 'Non-Waterfront', 'Waterfront').
+- **Property_Type**: (string) The type of real estate property (e.g., 'Commercial', 'Land').
+- **Listing_Status**: (string) The current status of the property listing (e.g., 'Active', 'Active Under Contract').
+==================================================
+--- GENERATED QUESTIONS (as YOU ARE LOOKING FOR A GOOD RENTAL PROPERTY - BUDGET 700K) ---
+1: What are the most common property types available under $700,000 that are typically suitable for rental income, and how many units of each are there? 
+2: Among active listings under $700,000, which properties offer the best combination of bedrooms and bathrooms relative to their price? 
+3: Which specific cities or zip codes have the highest concentration of active rental-suitable properties listed below $700,000? 
+4: For properties under $700,000, what is the breakdown of waterfront versus non-waterfront listings, and what is their average price difference? 
+5: What percentage of listings under $700,000 are currently 'Active' versus 'Active Under Contract', and do certain property types dominate 'Active Under Contract' status? 
+6: Are there any active properties under $700,000 that offer significantly more bedrooms and bathrooms than average for their specific city, potentially indicating a good value acquisition? 
+
+==================================================
+--- PANDASAI ANSWERS ---
+Q: What are the most common property types available under $700,000 that are typically suitable for rental income, and how many units of each are there?
+A: 
+    Property_Type  Number_Of_Units
+0  Single-Family               66
+1           Land                9
+2   Multi-Family                3 
+
+Q: Among active listings under $700,000, which properties offer the best combination of bedrooms and bathrooms relative to their price?
+A: 
+                Address          City State      Zip  ...  Bathrooms  Waterfront_Status  Property_Type Value_Metric
+0         19 Seneca St  Seneca Falls    NY  13148.0  ...        1.0     Non-Waterfront  Single-Family     0.000128
+1          1990 Rt 318  Seneca Falls    NY  13148.0  ...        2.0     Non-Waterfront  Single-Family     0.000080
+2  8089 State Route 90     Montezuma    NY  13117.0  ...        2.0     Non-Waterfront  Single-Family     0.000050
+3          179 Main St    Port Byron    NY  13140.0  ...        2.0     Non-Waterfront  Single-Family     0.000039
+4       12 Orchard Ave        Auburn    NY  13021.0  ...        1.0     Non-Waterfront  Single-Family     0.000038
+
+[5 rows x 10 columns] 
+
+Q: Which specific cities or zip codes have the highest concentration of active rental-suitable properties listed below $700,000?
+A: 
+ The city/zip code with the highest concentration of active rental-suitable properties listed below $700,000 is Auburn (Zip: 13021), with 16 properties. 
+
+Q: For properties under $700,000, what is the breakdown of waterfront versus non-waterfront listings, and what is their average price difference?
+A: 
+ For properties under $700,000:
+Waterfront listings: 25 (Average Price: $458,103.76)
+Non-Waterfront listings: 53 (Average Price: $304,194.32)
+The average price difference between waterfront and non-waterfront listings is $153,909.44. 
+
+Q: What percentage of listings under $700,000 are currently 'Active' versus 'Active Under Contract', and do certain property types dominate 'Active Under Contract' status?
+A: 
+ For listings under $700,000: 100.00% are 'Active' and 0.00% are 'Active Under Contract'. No property types dominate 'Active Under Contract' status under $700,000. 
+
+Q: Are there any active properties under $700,000 that offer significantly more bedrooms and bathrooms than average for their specific city, potentially indicating a good value acquisition?
+A: 
+                 Address    City     Price  Bedrooms  Bathrooms  avg_city_bedrooms  avg_city_bathrooms
+0  5203 State Route 38a  Auburn  399999.0       6.0        7.0           3.625000            2.416667
+1           245 Main St  Aurora  625000.0       5.0        5.0           3.285714            2.714286 
