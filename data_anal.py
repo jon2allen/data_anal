@@ -43,6 +43,11 @@ def main():
         help="Optional. Path to a text file to save only the generated questions."
     )
     parser.add_argument(
+        "--qload",
+        type=argparse.FileType('r'),
+        help="Optional. Path to a text file with pre-written questions (one per line). Overrides --questions."
+    )
+    parser.add_argument(
         "--execute",
         action="store_true", # This makes it a flag, e.g., --execute
         help="If specified, execute the generated questions against the data using PandasAI."
@@ -84,32 +89,38 @@ def main():
         output_buffer.append("\n" + "="*50 + "\n")
         print(data_description)
 
-        # --- 4. GENERATE QUESTIONS WITH LITELLM ---
-        print(f"-> Asking Gemini to generate {args.questions} questions...")
-        prompt_for_gemini = (
-            f"You are {args.role}. Based on the data description below, "
-            f"generate exactly {args.questions} insightful questions to ask about the data. "
-            f"Output only the questions, one per line, without any numbering, commentary, or introduction.\n\n"
-            f"Data Description:\n{data_description}"
-        )
-        
-        response = litellm.completion(
-            model="gemini/gemini-2.5-flash",
-            messages=[{"role": "user", "content": prompt_for_gemini}]
-        )
-        print("checking response" )        
-        generated_questions_text = response.choices[0].message.content
+        # --- 4. GENERATE OR LOAD QUESTIONS ---
+        if args.qload:
+            print(f"-> Loading questions from '{args.qload.name}'...")
+            generated_questions_text = args.qload.read()
+            args.qload.close()
+        else:
+            print(f"-> Asking Gemini to generate {args.questions} questions...")
+            prompt_for_gemini = (
+                f"You are {args.role}. Based on the data description below, "
+                f"generate exactly {args.questions} insightful questions to ask about the data. "
+                f"Output only the questions, one per line, without any numbering, commentary, or introduction.\n\n"
+                f"Data Description:\n{data_description}"
+            )
+            
+            response = litellm.completion(
+                model="gemini/gemini-2.5-flash",
+                messages=[{"role": "user", "content": prompt_for_gemini}]
+            )
+            print("checking response" )      
+            generated_questions_text = response.choices[0].message.content
+            
         print(generated_questions_text)
         generated_questions_text = str(generated_questions_text)
         # Clean up the list of questions (remove empty lines)
         question_list = [q.strip() for q in generated_questions_text.strip().split('\n') if q.strip()]
-        print("processed questions")  
+        print("processed questions")     
         output_buffer.append(f"--- GENERATED QUESTIONS (as {args.role.upper()}) ---\n")
         for i, question  in enumerate(question_list):
            output_buffer.append( str(i+1) + ": "+ question + " \n")
         #output_buffer.extend(question_list)
         #output_buffer.extend( generated_questions_text)
-        
+         
         print("print questoins")
         # --- 5. SAVE QUESTIONS TO QFILE (IF REQUESTED) ---
         if args.qfile:
@@ -132,11 +143,11 @@ def main():
                 except Exception as e:
                     output_buffer.append(f"\nQ: {question}")
                     output_buffer.append(f"\nA: ERROR - Could not execute this question. Reason: {e}")
-        
+         
         # --- 7. FINAL OUTPUT ---
         print("final1")
         final_report = output_buffer
-        print("type:  ", type(output_buffer) )
+        print("type:   ", type(output_buffer) )
         print("final2")
         if args.report:
             print(f"-> Writing full report to '{args.report}'...")
@@ -160,4 +171,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
