@@ -57,4 +57,82 @@ options:
   --execute             If specified, execute the generated questions against the data using PandasAI.
 ```
 
+## API Key Requirements for PandasAI with LiteLLM
+
+This repository uses PandasAI and LiteLLM, which can interface with various large language models (LLMs) like Mistral, Google Gemini, or OpenAI.
+
+---
+
+## API Key Requirements
+
+| Provider  | Environment Variable      | Where to Get the Key                     |
+|-----------|---------------------------|------------------------------------------|
+| Mistral   | `MISTRAL_API_KEY`         | [Mistral AI Dashboard](https://mistral.ai/) |
+| Gemini    | `GEMINI_API_KEY`          | [Google AI Studio](https://ai.google.dev/gemini-api/docs/api-key) |
+| OpenAI    | `OPENAI_API_KEY`          | [OpenAI Platform](https://platform.openai.com/) |
+
+---
+
+## How to Set Up API Keys
+
+### Mistral AI
+- Sign up at [Mistral AI](https://mistral.ai/).
+- Generate your API key from the dashboard.
+- Set the environment variable:
+  ```bash
+  export MISTRAL_API_KEY="your-mistral-api-key"
+  ```
+
+### Google Gemini
+- Get your key from [Google AI Studio](https://ai.google.dev/gemini-api/docs/api-key).
+- Set the environment variable:
+  ```bash
+  export GEMINI_API_KEY="your-gemini-api-key"
+  ```
+
+### OpenAI
+- Sign up at [OpenAI](https://platform.openai.com/).
+- Generate your API key.
+- Set the environment variable:
+  ```bash
+  export OPENAI_API_KEY="your-openai-api-key"
+  ```
+
+---
+
+## Example Usage with LiteLLM and PandasAI
+
+If your `data_anal.py` script uses LiteLLM, you can specify the model and API key in your code or via environment variables.
+
+### Using Mistral
+```python
+from pandasai import SmartDataframe
+from pandasai_litellm.litellm import LiteLLM
+
+# Initialize LiteLLM with Mistral
+llm = LiteLLM(model="mistral/mistral-tiny", api_key="your-mistral-api-key")
+
+# Configure PandasAI
+from pandasai import SmartDataframe
+df = SmartDataframe("your_data.csv", config={"llm": llm})
+
+# Ask questions
+result = df.chat("What is the average value of column X?")
+print(result)
+```
+
+Or, set the environment variable and let LiteLLM handle the rest:
+```bash
+export MISTRAL_API_KEY="your-mistral-api-key"
+python data_anal.py your_data.csv --role "a financial analyst" --questions 3
+```
+
+---
+
+## Notes
+- Always keep your API keys secure and never commit them to version control.
+- The specific model name (e.g., `mistral/mistral-tiny`, `mistral/mistral-small`, etc.) depends on the Mistral model you want to use. Check the [LiteLLM documentation](https://docs.litellm.ai/) for supported models and exact names.
+- If you switch between providers, just change the environment variable and model name in your script or command line.
+
+
 
