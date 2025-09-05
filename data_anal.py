@@ -7,6 +7,9 @@ import os
 import argparse
 import re
 
+BASE_MODEL = "gemini/gemini-2.5-flash"
+#BASE_MODEL = "mistral/open-mistral-nemo"
+
 def main():
     """
     Main function to parse arguments and run the data analysis workflow.
@@ -61,10 +64,10 @@ def main():
         return
 
     # Use a clear variable name for the PandasAI wrapper instance
-    llm = LiteLLM(model="gemini/gemini-2.5-flash")
+    llm = LiteLLM(model=BASE_MODEL)
 
     # Use a list to buffer all output for final reporting
-    output_buffer = []
+    output_buffer = [] 
 
 
     # Configure PandasAI to use this LLM
@@ -104,7 +107,7 @@ def main():
             )
             
             response = litellm.completion(
-                model="gemini/gemini-2.5-flash",
+                model=BASE_MODEL,
                 messages=[{"role": "user", "content": prompt_for_gemini}]
             )
             print("checking response" )      

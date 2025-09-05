@@ -109,13 +109,14 @@ Change this line in code:
 
 ## Example Usage with LiteLLM and PandasAI
 
-edit data_anal.py 
+edit data_anal.py update BASE_MODEL 
 
 ### Using Mistral
 ```python
 
-  # Initialize LiteLLM with Mistral
-  llm = LiteLLM(model="mistral/mistral-small")
+BASE_MODEL = "gemini/gemini-2.5-flash"
+#BASE_MODEL = "mistral/open-mistral-nemo"
+
 ```
 
 set the environment variable and let LiteLLM handle the rest:
