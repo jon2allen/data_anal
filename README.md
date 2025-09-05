@@ -61,6 +61,13 @@ options:
 
 This repository uses PandasAI and LiteLLM, which can interface with various large language models (LLMs) like Mistral, Google Gemini, or OpenAI.
 
+Change this line in code:
+
+```
+    # Use a clear variable name for the PandasAI wrapper instance
+    llm = LiteLLM(model="gemini/gemini-2.5-flash")
+```
+
 ---
 
 ## API Key Requirements
@@ -111,15 +118,8 @@ from pandasai_litellm.litellm import LiteLLM
 
 # Initialize LiteLLM with Mistral
 llm = LiteLLM(model="mistral/mistral-tiny", api_key="your-mistral-api-key")
-
-# Configure PandasAI
-from pandasai import SmartDataframe
-df = SmartDataframe("your_data.csv", config={"llm": llm})
-
-# Ask questions
-result = df.chat("What is the average value of column X?")
-print(result)
 ```
+
 
 Or, set the environment variable and let LiteLLM handle the rest:
 ```bash
