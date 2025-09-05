@@ -1,0 +1,6 @@
+What is the current number of active 2-bedroom houses listed in the dataset, and what is their average listing price?
+Which zip codes in the Cayuga region offer the most 2-bedroom houses, and what is the typical price range for them in those zip codes?
+How does having a 'Waterfront_Status' affect the average listing price of 2-bedroom houses compared to non-waterfront 2-bedroom houses?
+What is the distribution of bathroom counts for 2-bedroom houses, and how does the number of bathrooms impact their listing price?
+What are the most common 'Property_Type' classifications for 2-bedroom houses, and what are their respective average listing prices?
+What proportion of 2-bedroom houses are 'Active' versus 'Pending', and how might this indicate market demand for this specific property type?

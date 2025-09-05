@@ -1,0 +1,88 @@
+--- DATA DESCRIPTION --- 
+
+The 'table_cayuga' dataset contains 131 records.
+
+**Column Names and Types:**
+- **Address** (string): The street address of the property.
+- **City** (string): The city where the property is located (e.g., Auburn, Fleming, Weedsport, Jordan, Cayuga, Homer, Fayette, Genoa, Ovid, Ledyard, Mentz, Montezuma, Aurelius, Conquest, Ithaca, Lansing, Seneca Falls, Union Springs, Springport, Sterling, Cortland, Scipio Center, Port Byron, Moravia, Locke, Aurora, Ithaca Town, Ulysses, Varick, Covert, King Ferry, Interlaken, Cato, Skaneateles).
+- **State** (string): The state where the property is located (e.g., NY).
+- **Zip** (float): The zip code of the property.
+- **Price** (float): The listing price of the property.
+- **Bedrooms** (float): The number of bedrooms in the property.
+- **Bathrooms** (float): The number of bathrooms in the property.
+- **Waterfront_Status** (string): Indicates if the property is waterfront (e.g., Non-Waterfront, Waterfront).
+- **Property_Type** (string): The type of property (e.g., Multi-Family, Land, Single-Family, Commercial).
+- **Listing_Status** (string): The current status of the property listing (e.g., Pending, Active Under Contract, Active).
+
+**Brief Summary of Numerical Columns:**
+- **Price**:
+    - Minimum: $20,000.00
+    - Maximum: $3,999,000.00
+    - Average: $715,811.65
+- **Bedrooms**:
+    - Minimum: 0
+    - Maximum: 8
+    - Average: 3.5
+- **Bathrooms**:
+    - Minimum: 1
+    - Maximum: 8
+    - Average: 2.5
+
+==================================================
+--- GENERATED QUESTIONS (as LOOKING FOR A CHEAP RENTAL PRPERTY) ---
+1: What is the distribution of property prices in the lowest quartile, and which Property_Types are most common within this range? 
+2: Among "Active" listings, which cities offer the highest number of properties with 1-2 Bedrooms and a Price below the dataset's average? 
+3: How many "Multi-Family" properties are currently "Active", and what is their average price, as these are often acquired for rental income? 
+4: Excluding "Waterfront" properties, what is the average price for "Single-Family" homes with 2-3 Bedrooms that are "Active" and priced below the median for their city? 
+5: Is there a notable difference in the average price per Bedroom for "Single-Family" properties versus "Multi-Family" properties in the lower price ranges, suggesting better rental value? 
+6: Which cities have "Active" properties listed for less than $100,000, and what are the typical Bedrooms, Bathrooms, and Property_Types of these listings? 
+7: What is the average price of an "Active" 2-bedroom, 1-bathroom "Single-Family" property, and how does this compare to the overall average price of "Active" listings? 
+
+==================================================
+--- PANDASAI ANSWERS ---
+Q: What is the distribution of property prices in the lowest quartile, and which Property_Types are most common within this range?
+A: 
+    Property_Type  property_count
+0  Single-Family              27
+1           Land               4
+2   Multi-Family               2 
+
+Q: Among "Active" listings, which cities offer the highest number of properties with 1-2 Bedrooms and a Price below the dataset's average?
+A: 
+            City  Number_of_Properties
+0  Seneca Falls                     2
+1       Moravia                     2
+2        Ithaca                     1
+3    Port Byron                     1
+4        Aurora                     1
+5          Cato                     1
+6        Auburn                     1
+7         Mentz                     1
+8      Conquest                     1 
+
+Q: How many "Multi-Family" properties are currently "Active", and what is their average price, as these are often acquired for rental income?
+A: 
+ There are 3 'Multi-Family' properties currently 'Active', and their average price is $368,300.00. 
+
+Q: Excluding "Waterfront" properties, what is the average price for "Single-Family" homes with 2-3 Bedrooms that are "Active" and priced below the median for their city?
+A: 
+ 290225.0 
+
+Q: Is there a notable difference in the average price per Bedroom for "Single-Family" properties versus "Multi-Family" properties in the lower price ranges, suggesting better rental value?
+A: 
+ Yes, there is a notable difference. In the lower price ranges, Multi-Family properties have a lower average price per bedroom ($68,327.78) compared to Single-Family properties ($95,343.51). This suggests potentially better rental value for Multi-Family properties in these price segments. 
+
+Q: Which cities have "Active" properties listed for less than $100,000, and what are the typical Bedrooms, Bathrooms, and Property_Types of these listings?
+A: 
+            City  TypicalBedrooms  TypicalBathrooms TypicalPropertyType
+0  Seneca Falls              4.0               1.5       Single-Family
+1    Port Byron              1.0               1.0       Single-Family
+2          None              NaN               NaN                Land
+3         Mentz              2.0               1.0       Single-Family
+4     Montezuma              3.0               2.0       Single-Family
+5      Conquest              1.0               1.0       Single-Family
+6        Cayuga              NaN               NaN                Land 
+
+Q: What is the average price of an "Active" 2-bedroom, 1-bathroom "Single-Family" property, and how does this compare to the overall average price of "Active" listings?
+A: 
+ The average price of an 'Active' 2-bedroom, 1-bathroom 'Single-Family' property is $458,500.00. The overall average price of 'Active' listings is $646,190.03. This specific property type is less expensive than the overall active listings average. 

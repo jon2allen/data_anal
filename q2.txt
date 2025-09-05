@@ -1,0 +1,7 @@
+What is the distribution of property prices in the lowest quartile, and which Property_Types are most common within this range?
+Among "Active" listings, which cities offer the highest number of properties with 1-2 Bedrooms and a Price below the dataset's average?
+How many "Multi-Family" properties are currently "Active", and what is their average price, as these are often acquired for rental income?
+Excluding "Waterfront" properties, what is the average price for "Single-Family" homes with 2-3 Bedrooms that are "Active" and priced below the median for their city?
+Is there a notable difference in the average price per Bedroom for "Single-Family" properties versus "Multi-Family" properties in the lower price ranges, suggesting better rental value?
+Which cities have "Active" properties listed for less than $100,000, and what are the typical Bedrooms, Bathrooms, and Property_Types of these listings?
+What is the average price of an "Active" 2-bedroom, 1-bathroom "Single-Family" property, and how does this compare to the overall average price of "Active" listings?

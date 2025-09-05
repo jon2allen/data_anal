@@ -1,0 +1,85 @@
+--- DATA DESCRIPTION --- 
+
+The 'table_cayuga' dataset contains 131 records, each detailing a real estate property.
+
+Column Names and Types:
+- Address (string)
+- City (string)
+- State (string)
+- Zip (float)
+- Price (float)
+- Bedrooms (float)
+- Bathrooms (float)
+- Waterfront_Status (string)
+- Property_Type (string)
+- Listing_Status (string)
+
+Brief Summary:
+  - Price: Ranges from $20000.00 to $3999000.00, with an average of $715811.65.
+  - Bedrooms: Properties have between 0 and 8 bedrooms, averaging 3.53.
+  - Bathrooms: Properties have between 1 and 8 bathrooms, averaging 2.54.
+  - Zip Codes: There are 22 distinct zip codes, ranging from 13021 to 14882.
+  - Other Categorical Data: Properties are located in 34 distinct cities, are in 1 distinct states, have 2 unique waterfront statuses, 4 unique property types, and 3 unique listing statuses.
+==================================================
+--- GENERATED QUESTIONS (as LOOKING TO SELL A 4 BEDROOM HOUSE) ---
+1: What is the average and median selling price for 4-bedroom houses? 
+2: What is the price premium or discount for 4-bedroom houses with waterfront status? 
+3: How does the number of bathrooms impact the price of 4-bedroom houses? 
+4: Are there specific zip codes or cities where 4-bedroom houses sell for significantly higher or lower prices? 
+5: How many 4-bedroom houses are currently 'Active' on the market? 
+6: How do average prices for 4-bedroom houses vary across different property types? 
+7: What is the distribution of 'Listing_Status' (Active, Pending, Sold) specifically for 4-bedroom houses? 
+
+==================================================
+--- PANDASAI ANSWERS ---
+Q: What is the average and median selling price for 4-bedroom houses?
+A: 
+ The average selling price for 4-bedroom houses is $857,502.91 and the median selling price is $717,499.50. 
+
+Q: What is the price premium or discount for 4-bedroom houses with waterfront status?
+A: 
+ There is a price premium of $593,979.25 for 4-bedroom houses with waterfront status. 
+
+Q: How does the number of bathrooms impact the price of 4-bedroom houses?
+A: 
+    Bathrooms  Average_Price
+0        NaN   6.490000e+05
+1        1.0   2.644500e+05
+2        2.0   5.554768e+05
+3        3.0   1.101200e+06
+4        4.0   1.527967e+06
+5        5.0   1.780000e+06
+6        8.0   1.750000e+06 
+
+Q: Are there specific zip codes or cities where 4-bedroom houses sell for significantly higher or lower prices?
+A: 
+ For 4-bedroom houses (Overall Average Price: $857,502.91):
+The highest average price for a 4-bedroom house is in Varick, Zip N/A at $1,947,450.00.
+The lowest average price for a 4-bedroom house is in Seneca Falls, Zip 13148 at $57,000.00.
+
+Top 3 locations with highest average prices for 4-bedroom houses:
+- Varick, Zip N/A: $1,947,450.00
+- Ulysses, Zip N/A: $1,799,000.00
+- Aurora, Zip 13026: $1,599,900.00
+
+Bottom 3 locations with lowest average prices for 4-bedroom houses:
+- Sterling, Zip 13156: $425,000.00
+- Weedsport, Zip 13166: $229,900.00
+- Seneca Falls, Zip 13148: $57,000.00
+ 
+
+Q: How many 4-bedroom houses are currently 'Active' on the market?
+A: 
+ 25 
+
+Q: How do average prices for 4-bedroom houses vary across different property types?
+A: 
+    Property_Type  Average_Price
+0  Single-Family  857502.911765 
+
+Q: What is the distribution of 'Listing_Status' (Active, Pending, Sold) specifically for 4-bedroom houses?
+A: 
+           Listing_Status  Count
+0                 Active     25
+1                Pending      8
+2  Active Under Contract      1 
