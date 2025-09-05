@@ -114,10 +114,9 @@ edit data_anal.py
 ### Using Mistral
 ```python
 
-# Initialize LiteLLM with Mistral
-```
+  # Initialize LiteLLM with Mistral
   llm = LiteLLM(model="mistral/mistral-small")
-
+```
 
 set the environment variable and let LiteLLM handle the rest:
 ```bash
