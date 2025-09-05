@@ -109,19 +109,17 @@ Change this line in code:
 
 ## Example Usage with LiteLLM and PandasAI
 
-If your `data_anal.py` script uses LiteLLM, you can specify the model and API key in your code or via environment variables.
+edit data_anal.py 
 
 ### Using Mistral
 ```python
-from pandasai import SmartDataframe
-from pandasai_litellm.litellm import LiteLLM
 
 # Initialize LiteLLM with Mistral
-llm = LiteLLM(model="mistral/mistral-tiny", api_key="your-mistral-api-key")
 ```
+  llm = LiteLLM(model="mistral/mistral-small")
 
 
-Or, set the environment variable and let LiteLLM handle the rest:
+set the environment variable and let LiteLLM handle the rest:
 ```bash
 export MISTRAL_API_KEY="your-mistral-api-key"
 python data_anal.py your_data.csv --role "a financial analyst" --questions 3
